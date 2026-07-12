@@ -1,4 +1,4 @@
-console.log("Initializing script.js - Step 14");
+console.log("Initializing script.js - Step 24");
 function greet() {
-    return "Hello from Git practice! (Commit 14)";
+    return "Hello from Git practice! (Commit 24)";
 }
