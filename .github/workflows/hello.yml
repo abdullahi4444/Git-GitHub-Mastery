@@ -1,0 +1,18 @@
+name: Hello Workflow
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  greet:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Greet Student
+        run: |
+          FILE_COUNT=$(ls -1q | wc -l)
+          echo "Hello ${{ vars.STUDENT_NAME }}, your files count are $FILE_COUNT"
